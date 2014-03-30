@@ -89,6 +89,7 @@
 	// built-in build engine (including "default")
 
 	"builder": "traditional",
+	// "builder": "dvi",
 
 	// OPTION: "builder_path"
 	// If non-empty, specifies a path to a custom builder, relative to the
@@ -100,6 +101,7 @@
 	// Leave empty ("") for a built-in builder.
 
 	"builder_path": "",
+	// "builder_path": "User/builders",
 
 	// OPTION: "builder_settings"
 	// Specify builder-dependent settings and preferences
