@@ -1,0 +1,17 @@
+{
+	"installed_packages":
+	[
+		"Alignment",
+		"AutoPEP8",
+		"ChangeList",
+		"Jedi - Python autocompletion",
+		"LaTeXTools",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pylint",
+		"Theme - Soda",
+		"WordHighlight"
+	]
+}

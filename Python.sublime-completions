@@ -1,0 +1,9 @@
+{
+        "scope": "source.python",
+
+        "completions":
+        [
+                { "trigger": "pudb", "contents": "import pudb; pudb.set_trace()"},
+                { "trigger": "ipdb", "contents": "import ipdb; ipdb.set_trace()"},
+        ]
+}

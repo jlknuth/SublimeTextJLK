@@ -1,0 +1,13 @@
+{
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+	],
+	"spell_check": true,
+	"theme": "Soda Dark 3.sublime-theme",
+	"vintage_start_in_command_mode": true
+}

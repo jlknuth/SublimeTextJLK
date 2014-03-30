@@ -1,0 +1,14 @@
+{
+		"scope": "string.other.math.tex, string.other.math.latex, string.other.math.block.environment.latex",	
+
+        "completions":
+        [
+                { "trigger": "M", "contents": "\\sum_{$1}^{$2}$0"},
+                { "trigger": "inte", "contents": "\\int_{$1}^{$2}$0"},
+                { "trigger": "txt", "contents": "\\text{$1}$0"},
+                { "trigger": "...", "contents": "\\dots"},
+                { "trigger": "\\=", "contents": "\\dots"},
+        ]
+
+
+}
