@@ -86,11 +86,18 @@
 	    ]
     },
     { "keys": ["j", "j"], "command": "exit_insert_mode",
-	"context":
-	[
-		{ "key": "setting.command_mode", "operand": false },
-		{ "key": "setting.is_widget", "operand": false }
-	]
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+
+	{ "keys": ["enter"], "command": "prev_result",
+    	"context": 
+    	[
+	    	{"key": "selector", "operator": "equal", "operand": "text.find-in-files"}
+	    ]
 	},
 ]
 
