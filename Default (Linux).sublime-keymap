@@ -57,6 +57,13 @@
 			{ "key": "setting.is_widget", "operand": false }
 	    ]
     },
+	{ "keys": ["`", "<character>"], "command": "vi_select_bookmark",
+		"context": [{"key": "setting.command_mode"}]
+	},
+	{ "keys": ["'", "<character>"], "command": "vi_select_bookmark",
+		"args": {"select_bol": true},
+		"context": [{"key": "setting.command_mode"}]
+	},
     { "keys": ["`", "."], "command": "jump_to_change", "args": {"index": -1},
     	"context": 
 	    [
@@ -92,7 +99,6 @@
 			{ "key": "setting.is_widget", "operand": false }
 		]
 	},
-
 	{ "keys": ["enter"], "command": "prev_result",
     	"context": 
     	[
