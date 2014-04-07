@@ -1,0 +1,103 @@
+[
+	{ "keys": ["]", "s"], "command": "next_misspelling",
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+	{ "keys": ["[", "s"], "command": "prev_misspelling",
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},	
+	{ "keys": ["\""], "command": "insert_snippet", "args": {"contents": "``$0''"}, "context":
+	    [
+	        { "key": "selector", "operator": "equal", "operand": "text.tex.latex"},
+	        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	        { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|>|$)", "match_all": true },
+	        { "key": "preceding_text", "operator": "not_regex_contains", "operand": "[\"a-zA-Z0-9_]$", "match_all": true },
+	        { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.double", "match_all": true },
+			{ "key": "setting.command_mode", "operand": false}
+	    ]
+	},
+
+	{ "keys": ["\""], "command": "insert_snippet", "args": {"contents": "``${0:$SELECTION}''"}, "context":
+	    [
+	        { "key": "selector", "operator": "equal", "operand": "text.tex.latex"},
+	        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	        { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+			{ "key": "setting.command_mode", "operand": false}
+	    ]
+	},
+
+	{ "keys": ["\""], "command": "move", "args": {"by": "words", "forward": true}, "context":
+	    [
+	        { "key": "selector", "operator": "equal", "operand": "text.tex.latex"},
+	        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	        { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^''", "match_all": true },
+			{ "key": "setting.command_mode", "operand": false}
+	    ]
+	},
+    { "keys": ["]", "e"], "command": "sublimelinter_goto_error", "args": {"direction": "next"},
+    	"context": 
+	    [
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+	    ]
+    },
+    { "keys": ["[", "e"], "command": "sublimelinter_goto_error", "args": {"direction": "previous"},
+    	"context": 
+	    [
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+	    ]
+    },
+    { "keys": ["`", "."], "command": "jump_to_change", "args": {"index": -1},
+    	"context": 
+	    [
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+	    ]
+    },
+    { "keys": ["g", ","], "command": "jump_to_change", "args": {"move": 1},
+    	"context": 
+	    [
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+	    ]
+    },
+    { "keys": ["g", ";"], "command": "jump_to_change", "args": {"move": -1},
+    	"context": 
+	    [
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+	    ]
+    },
+    { "keys": ["u"], "command": "undo",
+    	"context": 
+	    [
+			{ "key": "setting.command_mode", "operand": true},
+			{ "key": "setting.is_widget", "operand": false }
+	    ]
+    },
+    { "keys": ["j", "j"], "command": "exit_insert_mode",
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	},
+
+	{ "keys": ["enter"], "command": "prev_result",
+    	"context": 
+    	[
+	    	{"key": "selector", "operator": "equal", "operand": "text.find-in-files"}
+	    ]
+	},
+]
+
