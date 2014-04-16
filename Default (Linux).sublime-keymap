@@ -1,18 +1,4 @@
 [
-	{ "keys": ["]", "s"], "command": "next_misspelling",
-		"context":
-		[
-			{ "key": "setting.command_mode", "operand": true},
-			{ "key": "setting.is_widget", "operand": false }
-		]
-	},
-	{ "keys": ["[", "s"], "command": "prev_misspelling",
-		"context":
-		[
-			{ "key": "setting.command_mode", "operand": true},
-			{ "key": "setting.is_widget", "operand": false }
-		]
-	},	
 	{ "keys": ["\""], "command": "insert_snippet", "args": {"contents": "``$0''"}, "context":
 	    [
 	        { "key": "selector", "operator": "equal", "operand": "text.tex.latex"},
@@ -105,5 +91,19 @@
 	    	{"key": "selector", "operator": "equal", "operand": "text.find-in-files"}
 	    ]
 	},
+    {"command": "sublime_jedi_goto", "keys": ["g", "d"],
+        "context": [
+            {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"},
+			{"key": "setting.command_mode", "operand": true},
+			{"key": "setting.is_widget", "operand": false }
+        ]
+    },
+    {"command": "sublime_jedi_find_usages", "keys": ["g", "u"],
+        "context": [
+            {"key": "selector", "operator": "equal", "operand":  "source.python - string - comment"},
+			{"key": "setting.command_mode", "operand": true},
+			{"key": "setting.is_widget", "operand": false }
+        ]
+    },
 ]
 
