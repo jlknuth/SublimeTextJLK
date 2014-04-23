@@ -1,12 +1,4 @@
 [
 	{ "caption": ":q", "command": "close_file"},
-	{ "caption": ":wq", 
-		"command": "run_multiple",
-		"args": {
-		  "commands": [
-		    {"command": "save", "args": null, "context": "window"},
-		    {"command": "close_file", "args": null, "context": "window"}
-		  ]
-		}
-	}
+	{ "caption": ":wq", "command": "save_close_file"}
 ]
