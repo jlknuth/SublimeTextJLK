@@ -112,5 +112,13 @@
 			{"key": "setting.is_widget", "operand": false }
         ]
     },
+    {"keys": ["ctrl+j"], "command": "insert_snippet", "args": { "contents": "$0\n" },
+        "context": [
+			{"key": "setting.command_mode", "operand": true},
+			{"key": "setting.is_widget", "operand": false }
+        ]
+    },
+    {"keys": ["ctrl+o"], "command": "jump_back"},
+    {"keys": ["ctrl+i"], "command": "jump_forward"},
 ]
 
