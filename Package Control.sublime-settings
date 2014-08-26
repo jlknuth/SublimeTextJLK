@@ -2,14 +2,18 @@
 	"installed_packages":
 	[
 		"Alignment",
+		"AppleScript Completions and Snippets",
 		"AutoPEP8",
 		"ChangeList",
+		"Color Highlighter",
+		"Cython",
 		"EasyMotion",
 		"Git",
 		"Git Config",
 		"Jedi - Python autocompletion",
 		"KeyboardSpellCheck",
 		"LaTeXTools",
+		"MarkAndMove",
 		"orgmode",
 		"Pretty JSON",
 		"Print to HTML",
