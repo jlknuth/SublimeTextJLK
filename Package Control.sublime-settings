@@ -1,8 +1,16 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"Alignment",
-		"AppleScript Completions and Snippets",
+		"AppleScript",
 		"AutoPEP8",
 		"ChangeList",
 		"Color Highlighter",
@@ -14,7 +22,10 @@
 		"KeyboardSpellCheck",
 		"LaTeXTools",
 		"MarkAndMove",
+		"MarkdownEditing",
+		"OmniMarkupPreviewer",
 		"orgmode",
+		"Package Control",
 		"Pretty JSON",
 		"Print to HTML",
 		"ProtoFeather",
