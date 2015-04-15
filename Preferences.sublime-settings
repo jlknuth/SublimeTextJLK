@@ -9,6 +9,7 @@
 	[
 		"Markdown"
 	],
+	"scroll_past_end": true,
 	"spell_check": true,
 	"theme": "Soda Dark 3.sublime-theme",
 	"vintage_start_in_command_mode": true,

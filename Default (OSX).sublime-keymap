@@ -139,6 +139,14 @@
         "keys": ["ctrl+shift+;", "enter"], 
         "command": "easy_motion",
         "args": {"select_text": true, "character": "enter"}
-    }
+    },
+    {
+        "keys": ["super+alt+b"], "command": "omni_markup_preview",
+        "context": [{"key": "omnimarkup_is_enabled", "operator": "equal", "operand": ""}]
+    },
+    {
+        "keys": ["super+b"], "command": "omni_markup_export",
+        "context": [{"key": "omnimarkup_is_enabled", "operator": "equal", "operand": ""}]
+    },
 ]
 
