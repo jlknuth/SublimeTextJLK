@@ -148,5 +148,20 @@
         "keys": ["super+b"], "command": "omni_markup_export",
         "context": [{"key": "omnimarkup_is_enabled", "operator": "equal", "operand": ""}]
     },
+
+	{ "keys": ["g", "t"], "command": "next_view",
+	    "context":
+	    [
+	        { "key": "setting.command_mode", "operand": true },
+	        { "key": "setting.is_widget", "operand": false }
+	    ]
+	},
+	{ "keys": ["g", "T"], "command": "prev_view",
+	    "context":
+	    [
+	        { "key": "setting.command_mode", "operand": true },
+	        { "key": "setting.is_widget", "operand": false }
+	    ]
+	},
 ]
 

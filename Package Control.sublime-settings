@@ -1,4 +1,5 @@
 {
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -24,11 +25,13 @@
 		"Pretty JSON",
 		"Print to HTML",
 		"ProtoFeather",
+		"Python 3",
+		"Python Breakpoints",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-pep8",
+		"SublimeLinter-pylint",
 		"Theme - Soda",
-		"Vintage Escape",
-		"WordHighlight"
+		"Vintage Escape"
 	]
 }

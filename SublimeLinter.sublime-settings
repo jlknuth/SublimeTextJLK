@@ -18,19 +18,22 @@
             "pylint": {
                 "@disable": true,
                 "args": [],
-                "disable": "",
+                "disable": "R0902, R0913",
                 "enable": "",
                 "excludes": [],
                 "paths": [],
                 "rcfile": "",
-                "show-codes": false
+                "show-codes": true 
             }
         },
         "mark_style": "outline",
         "no_column_highlights_line": true,
+        "passive_warnings": false,
         "paths": {
             "linux": [],
-            "osx": [],
+            "osx": [
+                "/Users/jknuth/miniconda2/envs/python3/bin/"
+            ],
             "windows": []
         },
         "python_paths": {
