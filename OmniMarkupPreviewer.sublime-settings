@@ -31,6 +31,7 @@
         //                   ("em" and "en") dashes, etc.
         //                   See: http://daringfireball.net/projects/smartypants/
         //                   And: https://github.com/waylan/Python-Markdown/blob/master/docs/extensions/smarty.txt
-        "extensions": ["tables", "strikeout", "fenced_code", "codehilite", "toc", "footnotes", "nl2br"]
+        "extensions": ["tables", "fenced_code", "codehilite", "toc", "footnotes", "nl2br"]
+        // "server_port": 51034
     }
 }
